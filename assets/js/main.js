@@ -132,64 +132,6 @@ document.querySelectorAll('.skill-box').forEach(skillBox => {
     observer.observe(skillBox);
 });
 
-// popup modal
-function openLightbox(imageSrc) {
-    var modal = document.getElementById("lightbox");
-    var modalImage = document.getElementById("lightbox-image");
-
-    // Set the image source
-    modalImage.src = imageSrc;
-
-    // Add the 'active' class to display the modal
-    modal.classList.add("popModal");
-
-    // Lock the body scroll by setting its overflow to hidden
-    document.body.style.overflow = "hidden";
-}
-
-// Function to close the lightbox
-function closeLightbox() {
-    var modal = document.getElementById("lightbox");
-
-    // Remove the 'active' class to hide the modal
-    modal.classList.remove("popModal");
-
-    // Unlock the body scroll by removing the overflow hidden style
-    document.body.style.overflow = "visible";
-}
-
-// Attach the click event listener to the .close element
-document.querySelector(".close").addEventListener("click", closeLightbox);
-
-// sliding effects
-document.addEventListener('scroll', function() {
-    const section = document.querySelector('.stack-bg');
-    const parallaxBgs = document.querySelectorAll('.parallax-bg');
-    
-    // Ensure there are at least two .parallax-bg elements
-    if (parallaxBgs.length < 2) return;
-
-    // Get the position of the first .parallax-bg element
-    const firstParallaxBg = parallaxBgs[0];
-    const firstParallaxBgRect = firstParallaxBg.getBoundingClientRect();
-    const firstParallaxBgBottom = firstParallaxBgRect.bottom;
-
-    // Add class to the rest of the .parallax-bg elements if the user has scrolled past the first one
-    if (window.scrollY > firstParallaxBgBottom) {
-        parallaxBgs.forEach((bg, index) => {
-            if (index > 0) {
-                bg.classList.add('stactIn');
-            }
-        });
-    } else {
-        parallaxBgs.forEach((bg, index) => {
-            if (index > 0) {
-                bg.classList.remove('stactOut');
-            }
-        });
-    }
-});
-
 // infinite slider
 const marqueeSlider = document.querySelector('.marque-animation');
   const images = Array.from(marqueeSlider.children);

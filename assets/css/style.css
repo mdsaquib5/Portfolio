@@ -266,8 +266,8 @@ header{
 }
 
 .logo img{
-	max-width: 60px;
-	width: 100%;
+	max-height: 60px;
+	height: 100%;
 }
 
 .menus ul{
@@ -484,7 +484,7 @@ header{
 }
 
 .main-heading{
-	font-size: 65px;
+	font-size: 56px;
 	background: linear-gradient(to right, #8750f7 0%, #ffffff 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -559,10 +559,10 @@ header{
 }
 
 .hero-sideImg img{
-	border-radius: 38px;
-	transform: rotate(4.29deg);
 	border: 2px solid #2a1454;
+	border-radius: 38px;
 	transition: all 0.3s;
+	transform: rotate(4.29deg);
 }
 
 .hero-sideImg:hover img{
@@ -629,7 +629,7 @@ header{
     background: rgba(255, 255, 255, 0.2);
 }
 
-.learning .expo-items:last-child::after{
+.expo-items:last-child::after{
 	display: none;
 }
 
@@ -931,6 +931,25 @@ footer p{
 	color: var(--primary);
 }
 /*--------------- footer css ends ----------*/
+
+/*--------------- aboutUS css starts ---------*/
+.about_me{
+	border: 1px solid #8750f7;
+	padding: 30px;
+	border-radius: 38px;
+}
+
+.img-unset .hero-sideImg img{
+	transform: unset;
+}
+
+.work-areas{
+	border: 1px solid #2a1454;
+	padding: 40px;
+	border-radius: 38px;
+	margin-top: 50px;
+}
+/*--------------- aboutUS css ends ----------*/
 
 @media screen and (max-width: 1024px){
 	.menus{
