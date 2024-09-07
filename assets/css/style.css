@@ -633,6 +633,10 @@ header{
 	display: none;
 }
 
+.expo-items:last-child{
+	margin-bottom: 0;
+}
+
 .item-img{
 	background: #8750f7;
 	width: 55px;
@@ -935,7 +939,7 @@ footer p{
 /*--------------- aboutUS css starts ---------*/
 .about_me{
 	border: 1px solid #8750f7;
-	padding: 30px;
+	padding: 25px 30px;
 	border-radius: 38px;
 }
 
@@ -948,6 +952,10 @@ footer p{
 	padding: 40px;
 	border-radius: 38px;
 	margin-top: 50px;
+}
+
+.about_me .sub-title{
+	font-size: 44px;
 }
 /*--------------- aboutUS css ends ----------*/
 
