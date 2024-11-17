@@ -957,8 +957,31 @@ footer p{
 .about_me .sub-title{
 	font-size: 44px;
 }
+
+.space-unset{
+	padding-bottom: 100px;
+	padding-top: 150px;
+}
 /*--------------- aboutUS css ends ----------*/
 
+/*--------------- contacUS css starts --------*/
+.contact-form :is(input, textarea){
+	width: 100%;
+	padding: 10px;
+	border: 0;
+	outline: none;
+	border: 1px solid #22272c;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	background: var(--black);
+}
+
+.contact-form{
+	background: #140c1c;
+	border-radius: 10px;
+	padding: 30px;
+}
+/*--------------- contacUS css starts --------*/
 @media screen and (max-width: 1024px){
 	.menus{
 		position: absolute;
